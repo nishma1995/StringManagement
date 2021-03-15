@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="stringManagement.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+    <label>String</label>
+    
+    
+    <div>
+        <input type="text" name="string" id="string" placeholder="Enter the string">
+    </div>
+    <br>
+    <label>Reversed String</label>
+    
+    <div>
+        <input type="text" name="reverse" id="reverse" placeholder="Reversed string">
+    </div>
+    <br>
+    <label>Changed String</label>
+    
+    <div>
+        <input type="text" name="stringUpper" id="stringupper"  placeholder="Uppercase in string">
+    </div>
+    <br>
+
+    <label>String Length</label>
+    <div>
+        <input type="text" name="stringLength" id="stringlength" placeholder="Length of the string">
+    </div>
+    <br>
+    <div>
+        <input type="button" name="btn" id="btn" value="Display">
+        <div></div>
+    </div>
+   </div>
+
+
+</body>
+
+<script>
+    $(document).ready(function()
+    {
+        $("#btn").click(function()
+        {
+           var string=$("#string").val();
+           var reverse=string.split('').reverse().join('');
+           $("#reverse").val(reverse);
+           var length=($('#string').val().length);
+            $("#stringlength").val(length);
+            var subString=string.substring(0,4);           
+            var stringCaps=string.substring(4,6).toUpperCase();
+            var stringUpper=subString.concat(stringCaps);
+            $("#stringupper").val(stringUpper);
+
+
+        });
+    });
+        
+
+</script>
+</html>

@@ -1,0 +1,33 @@
+body
+{
+    margin: 0;
+    padding: 0;
+
+}
+.container
+{
+    margin-left: 10%;
+    padding-bottom: 5%;
+    padding-left:10% ;
+    padding-top: 3%;
+    background-color: lemonchiffon;
+    width: 25%;
+    margin-top: 10%;
+}
+.row
+{
+    padding-inline: 2%;
+
+}
+.buttonStyle
+{
+position: fixed;
+left: 80px;
+
+ 
+ 
+}
+.form-group
+{
+    display: inline-block;
+}

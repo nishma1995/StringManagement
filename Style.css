@@ -1,0 +1,35 @@
+body
+{margin: 10%;
+
+}
+.formBox
+{
+    width: 300px;
+    height: 300px;
+    background-color: rgb(204, 226, 226);
+    margin: 10;
+    text-align: center;
+    top: 100px;
+    box-sizing:border-box;
+}
+.title p
+{
+    font-size: large;
+    
+}
+.formBox input[type="text"],
+.formBox input[type="Password"]
+{
+    border: none;
+    border-bottom: 2px solid;
+    outline: none;
+    margin-top: 0%;
+    
+}
+.button
+{
+    position: fixed;
+    left: 230px;
+    top: 250px;
+}
+

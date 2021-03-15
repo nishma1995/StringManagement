@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="MarkFinder.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery-3.5.1.min.js"></script>
+  
+   
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="cardBody">
+            <div class="cardTitle"><h1>Addition</h1></div>
+            <form>
+                <div class="form-group">
+                    <label>Name</label></div>
+                    <br>
+                    <div>
+                    <input type="text" name="" placeholder="Enter the name">
+                </div>
+<br>
+                <div class="form-group">
+                    <label>Malayalam</label>
+                   <div>
+
+                    <input type="text" name="malayalam" id="malayalam" placeholder="Enter the mark">
+                </div>
+            
+                <div class="form-group">
+                    <br>
+                    <label>English</label>
+                    <div>
+                    <input type="text" name="english" id="english" placeholder="Enter the mark">
+                    
+                </div>
+                <br>
+                <div class="form-group">
+                
+                    <label>Maths</label>
+                <div>
+                    <input type="text" name="maths" id="maths" placeholder="Enter the mark">
+                </div></div>
+                <br>
+                <div class="form-group">
+                    <br>
+                    <label>Total</label>
+                    <div>
+                    <input type="text" name="total" id="total" >
+                </div></div>
+                <br>
+                <div class="form-group">
+                    <br>
+                    <label>Average</label>
+                <div>
+                    <input type="text" name="average" id="average" >
+                </div></div>
+                <br>
+                <div class="buttonStyle">
+                    <br>
+                    <input type="button" name="btn" id="btn" value="Add">
+                    <input type="button" name="clear" id="clear" value="Clear">
+                </div>
+
+
+
+
+            </form>
+        </div>
+    </div>    
+   </div>
+</div> 
+</body>
+
+<script type="text/javascript">
+
+
+    $(document).ready(function()
+    {
+        $('#btn').click(function()
+        {
+          var mark1=parseInt($('#malayalam').val());
+          var mark2=parseInt($('#english').val());
+          var mark3=parseInt($('#maths').val());
+          var total=mark1+mark2+mark3;
+          $('#total').val(mark1+mark2+mark3);
+          var avg=total/3;
+          $('#average').val(avg);
+
+        });
+
+    });
+
+</script>
+</html>
+
+   
